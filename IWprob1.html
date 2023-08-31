@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        button{
+            color: beige;
+            background-color: black;
+            size: 1.5cm;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+</head>
+<body>
+    <input type="text" id="inp1" placeholder="First Number">
+    <button onclick="b1()">+</button>
+    <button onclick="b2()">-</button>
+    <button onclick="b3()">x</button>
+    <button onclick="b4()">/</button>
+    
+    <input type="text" id="inp2" placeholder="Second Number">
+    <button>=</button>
+    <input type="text" id="inp3" placeholder="Result">
+
+    
+</body>
+</html>
+<script>
+  let  input1=document.getElementById("inp1");
+  let input2=document.getElementById("inp2");
+  let result=document.getElementById("inp3")
+  function b1(){
+    sum=+input1.value+ +input2.value;
+    result.value=sum;
+
+  }
+  function b2(){
+    sub=+input1.value- +input2.value;
+    result.value=sub
+
+
+  }
+  function b3(){
+    multiply=+input1.value*+input2.value;
+    alert(multiply);
+
+  }
+
+  function b4(){
+    divi=+input1.value/ +input2.value;
+    alert(divi);
+  }
+</script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Showing Alerts</title>
+	</head>
+	<body>
+        <input type="text" id="Firstname" >
+        <input type="text" id="Lastname" >
+        
+
+		<button onclick="showFirstName()">FIRSTNAME</button>
+		<button onclick="showLastName()">LASTNAME</button>
+		<button onclick="showFullName()">FULLNAME</button>
+		<script type="text/javascript">
+          let inpF=document.getElementById("Firstname");
+          let inpL=document.getElementById("Lastname");
+          let inpC=document.getElementById("Fullname");
+          
+
+
+            function showFirstName() {
+			 alert(inpF.value)
+			}
+
+            function showLastName() {
+                alert(inpL.value)        
+            }
+
+            function showFullName() {
+                
+                alert(inpF.value+" "+inpL.value);
+               
+            }
+        </script>
+	</body>
+</html>
+Complete all the functions by creating a copy of the above template with the file name alerts.html
+
+Submission Link
+SUBMIT
+ASSIGNMENT CONCLUDES DATE AND TIME : (2 SEP, 23 - 10:00 PM)
