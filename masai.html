@@ -13,9 +13,16 @@
     <option value="Male">Male</option>
     <option value="Female">Female</option>
   </select>
-  <button>Apply</button>
+  <button onclick="clickApply()">Apply</button>
 </body>
 </html>
 <script>
+  function clickApply(){
+  let Name=document.getElementById("name").value;
+  let Gender=document.getElementById("gender").value;
+  let H2=document.getElementById("display");
+  
+    H2.innerText=Name+" "+Gender
+  }
 
 </script>
